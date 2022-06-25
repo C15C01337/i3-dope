@@ -15,7 +15,7 @@ unzip robotoMono.zip -d ~/.local/share/fonts/
 unzip i3-gaps.zip
 sudo dpkg -i alacritty.deb
 fc-cache -fv
-sudo apt install -f
+sudo apt install -f -y
 cd i3-gaps && mkdir -p build && cd build && meson ..
 ninja
 sudo ninja install
