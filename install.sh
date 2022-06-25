@@ -8,12 +8,10 @@ mkdir -p ~/.local/share/fonts/
 wget https://0xpsy.000webhostapp.com/i3-dope/iosevka.zip
 wget https://0xpsy.000webhostapp.com/i3-dope/robotomono.zip
 wget https://0xpsy.000webhostapp.com/i3-dope/i3-gaps.zip
-wget https://0xpsy.000webhostapp.com/i3-dope/alacritty.deb
 
 unzip iosevka.zip -d ~/.local/share/fonts/
 unzip robotoMono.zip -d ~/.local/share/fonts/
 unzip i3-gaps.zip
-sudo dpkg -i alacritty.deb
 fc-cache -fv
 sudo apt install -f -y
 cd i3-gaps && mkdir -p build && cd build && meson ..
@@ -24,9 +22,7 @@ pip3 install pywal
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
-mkdir -p ~/.config/alacritty
 cp config/i3/config ~/.config/i3/config
-cp config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp config/compton/compton.conf ~/.config/compton/compton.conf
 cp config/rofi/config ~/.config/rofi/config
