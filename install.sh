@@ -10,7 +10,7 @@ wget https://0xpsy.000webhostapp.com/i3-dope/robotomono.zip
 wget https://0xpsy.000webhostapp.com/i3-dope/i3-gaps.zip
 
 unzip iosevka.zip -d ~/.local/share/fonts/
-unzip robotoMono.zip -d ~/.local/share/fonts/
+unzip robotomono.zip -d ~/.local/share/fonts/
 unzip i3-gaps.zip
 fc-cache -fv
 sudo apt install -f -y
